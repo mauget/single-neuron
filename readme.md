@@ -4,149 +4,152 @@ This trivial neuron example illustrates using gradiant descent to
 learn a neural weight that will yield a goal of 0.8 when it sees an
 input "somewhere near" 0.5. 
 
-This stupid example illustrates a single neuron configuring a weight
+This silly example illustrates a single neuron configuring a weight
 that will yield a stipulated goal.
 
 
 ## Log of Learning Run
 
 ```
-1. Prediction 988.8170586343342 using weight 1483.6255879515013. Seeking goal 0.8
-2. Prediction 741.8127939757507 using weight 1113.119190963626. Seeking goal 0.8
-3. Prediction 556.559595481813 using weight 835.2393932227194. Seeking goal 0.8
-4. Prediction 417.6196966113597 using weight 626.8295449170396. Seeking goal 0.8
-5. Prediction 313.4147724585198 using weight 470.52215868777967. Seeking goal 0.8
-6. Prediction 235.26107934388983 using weight 353.2916190158347. Seeking goal 0.8
-7. Prediction 176.64580950791736 using weight 265.36871426187605. Seeking goal 0.8
-8. Prediction 132.68435713093803 using weight 199.42653569640703. Seeking goal 0.8
-9. Prediction 99.71326784820351 using weight 149.96990177230526. Seeking goal 0.8
-10. Prediction 74.98495088615263 using weight 112.87742632922894. Seeking goal 0.8
-11. Prediction 56.43871316461447 using weight 85.0580697469217. Seeking goal 0.8
-12. Prediction 42.52903487346085 using weight 64.19355231019128. Seeking goal 0.8
-13. Prediction 32.09677615509564 using weight 48.54516423264346. Seeking goal 0.8
-14. Prediction 24.27258211632173 using weight 36.80887317448259. Seeking goal 0.8
-15. Prediction 18.404436587241296 using weight 28.006654880861944. Seeking goal 0.8
-16. Prediction 14.003327440430972 using weight 21.40499116064646. Seeking goal 0.8
-17. Prediction 10.70249558032323 using weight 16.453743370484844. Seeking goal 0.8
-18. Prediction 8.226871685242422 using weight 12.740307527863633. Seeking goal 0.8
-19. Prediction 6.370153763931817 using weight 9.955230645897725. Seeking goal 0.8
-20. Prediction 4.977615322948862 using weight 7.866422984423293. Seeking goal 0.8
-21. Prediction 3.9332114922116466 using weight 6.29981723831747. Seeking goal 0.8
-22. Prediction 3.149908619158735 using weight 5.124862928738102. Seeking goal 0.8
-23. Prediction 2.562431464369051 using weight 4.243647196553576. Seeking goal 0.8
-24. Prediction 2.121823598276788 using weight 3.582735397415182. Seeking goal 0.8
-25. Prediction 1.791367698707591 using weight 3.0870515480613867. Seeking goal 0.8
-26. Prediction 1.5435257740306934 using weight 2.7152886610460403. Seeking goal 0.8
-27. Prediction 1.3576443305230201 using weight 2.43646649578453. Seeking goal 0.8
-28. Prediction 1.218233247892265 using weight 2.2273498718383977. Seeking goal 0.8
-29. Prediction 1.1136749359191989 using weight 2.0705124038787983. Seeking goal 0.8
-30. Prediction 1.0352562019393992 using weight 1.9528843029090988. Seeking goal 0.8
-31. Prediction 0.9764421514545494 using weight 1.8646632271818242. Seeking goal 0.8
-32. Prediction 0.9323316135909121 using weight 1.7984974203863682. Seeking goal 0.8
-33. Prediction 0.8992487101931841 using weight 1.7488730652897762. Seeking goal 0.8
-34. Prediction 0.8744365326448881 using weight 1.711654798967332. Seeking goal 0.8
-35. Prediction 0.855827399483666 using weight 1.683741099225499. Seeking goal 0.8
-36. Prediction 0.8418705496127495 using weight 1.6628058244191244. Seeking goal 0.8
-37. Prediction 0.8314029122095622 using weight 1.6471043683143434. Seeking goal 0.8
-38. Prediction 0.8235521841571717 using weight 1.6353282762357575. Seeking goal 0.8
-39. Prediction 0.8176641381178787 using weight 1.626496207176818. Seeking goal 0.8
-40. Prediction 0.813248103588409 using weight 1.6198721553826136. Seeking goal 0.8
-41. Prediction 0.8099360776913068 using weight 1.6149041165369602. Seeking goal 0.8
-42. Prediction 0.8074520582684801 using weight 1.6111780874027202. Seeking goal 0.8
-43. Prediction 0.8055890437013601 using weight 1.6083835655520402. Seeking goal 0.8
-44. Prediction 0.8041917827760201 using weight 1.6062876741640302. Seeking goal 0.8
-45. Prediction 0.8031438370820151 using weight 1.6047157556230227. Seeking goal 0.8
-46. Prediction 0.8023578778115114 using weight 1.603536816717267. Seeking goal 0.8
-47. Prediction 0.8017684083586335 using weight 1.6026526125379503. Seeking goal 0.8
-48. Prediction 0.8013263062689752 using weight 1.6019894594034627. Seeking goal 0.8
-49. Prediction 0.8009947297017314 using weight 1.601492094552597. Seeking goal 0.8
-50. Prediction 0.8007460472762985 using weight 1.6011190709144478. Seeking goal 0.8
-51. Prediction 0.8005595354572239 using weight 1.600839303185836. Seeking goal 0.8
-52. Prediction 0.800419651592918 using weight 1.600629477389377. Seeking goal 0.8
-53. Prediction 0.8003147386946885 using weight 1.6004721080420328. Seeking goal 0.8
-54. Prediction 0.8002360540210164 using weight 1.6003540810315247. Seeking goal 0.8
-55. Prediction 0.8001770405157623 using weight 1.6002655607736436. Seeking goal 0.8
-56. Prediction 0.8001327803868218 using weight 1.6001991705802328. Seeking goal 0.8
-57. Prediction 0.8000995852901164 using weight 1.6001493779351745. Seeking goal 0.8
-58. Prediction 0.8000746889675873 using weight 1.600112033451381. Seeking goal 0.8
-59. Prediction 0.8000560167256905 using weight 1.6000840250885358. Seeking goal 0.8
-60. Prediction 0.8000420125442679 using weight 1.6000630188164018. Seeking goal 0.8
-61. Prediction 0.8000315094082009 using weight 1.6000472641123014. Seeking goal 0.8
-62. Prediction 0.8000236320561507 using weight 1.600035448084226. Seeking goal 0.8
-63. Prediction 0.800017724042113 using weight 1.6000265860631695. Seeking goal 0.8
-64. Prediction 0.8000132930315847 using weight 1.600019939547377. Seeking goal 0.8
-65. Prediction 0.8000099697736885 using weight 1.600014954660533. Seeking goal 0.8
-66. Prediction 0.8000074773302664 using weight 1.6000112159953996. Seeking goal 0.8
-67. Prediction 0.8000056079976998 using weight 1.6000084119965496. Seeking goal 0.8
-68. Prediction 0.8000042059982748 using weight 1.6000063089974121. Seeking goal 0.8
-69. Prediction 0.8000031544987061 using weight 1.6000047317480592. Seeking goal 0.8
-70. Prediction 0.8000023658740296 using weight 1.6000035488110445. Seeking goal 0.8
-71. Prediction 0.8000017744055222 using weight 1.6000026616082834. Seeking goal 0.8
-72. Prediction 0.8000013308041417 using weight 1.6000019962062126. Seeking goal 0.8
-73. Prediction 0.8000009981031063 using weight 1.6000014971546594. Seeking goal 0.8
-74. Prediction 0.8000007485773297 using weight 1.6000011228659945. Seeking goal 0.8
-75. Prediction 0.8000005614329972 using weight 1.600000842149496. Seeking goal 0.8
-76. Prediction 0.800000421074748 using weight 1.600000631612122. Seeking goal 0.8
-77. Prediction 0.800000315806061 using weight 1.6000004737090916. Seeking goal 0.8
-78. Prediction 0.8000002368545458 using weight 1.6000003552818187. Seeking goal 0.8
-79. Prediction 0.8000001776409094 using weight 1.6000002664613642. Seeking goal 0.8
-80. Prediction 0.8000001332306821 using weight 1.6000001998460232. Seeking goal 0.8
-81. Prediction 0.8000000999230116 using weight 1.6000001498845173. Seeking goal 0.8
-82. Prediction 0.8000000749422587 using weight 1.600000112413388. Seeking goal 0.8
-83. Prediction 0.800000056206694 using weight 1.600000084310041. Seeking goal 0.8
-84. Prediction 0.8000000421550205 using weight 1.6000000632325309. Seeking goal 0.8
-85. Prediction 0.8000000316162654 using weight 1.6000000474243983. Seeking goal 0.8
-86. Prediction 0.8000000237121991 using weight 1.6000000355682986. Seeking goal 0.8
-87. Prediction 0.8000000177841493 using weight 1.600000026676224. Seeking goal 0.8
-88. Prediction 0.800000013338112 using weight 1.600000020007168. Seeking goal 0.8
-89. Prediction 0.800000010003584 using weight 1.6000000150053761. Seeking goal 0.8
-90. Prediction 0.8000000075026881 using weight 1.600000011254032. Seeking goal 0.8
-91. Prediction 0.800000005627016 using weight 1.600000008440524. Seeking goal 0.8
-92. Prediction 0.800000004220262 using weight 1.600000006330393. Seeking goal 0.8
-93. Prediction 0.8000000031651965 using weight 1.6000000047477947. Seeking goal 0.8
-94. Prediction 0.8000000023738973 using weight 1.600000003560846. Seeking goal 0.8
-95. Prediction 0.800000001780423 using weight 1.6000000026706345. Seeking goal 0.8
-96. Prediction 0.8000000013353172 using weight 1.6000000020029759. Seeking goal 0.8
-97. Prediction 0.8000000010014879 using weight 1.600000001502232. Seeking goal 0.8
-98. Prediction 0.800000000751116 using weight 1.600000001126674. Seeking goal 0.8
-99. Prediction 0.800000000563337 using weight 1.6000000008450055. Seeking goal 0.8
-100. Prediction 0.8000000004225027 using weight 1.600000000633754. Seeking goal 0.8
-101. Prediction 0.800000000316877 using weight 1.6000000004753154. Seeking goal 0.8
-102. Prediction 0.8000000002376577 using weight 1.6000000003564865. Seeking goal 0.8
-103. Prediction 0.8000000001782432 using weight 1.6000000002673649. Seeking goal 0.8
-104. Prediction 0.8000000001336824 using weight 1.6000000002005237. Seeking goal 0.8
-105. Prediction 0.8000000001002618 using weight 1.6000000001503927. Seeking goal 0.8
-106. Prediction 0.8000000000751963 using weight 1.6000000001127945. Seeking goal 0.8
-107. Prediction 0.8000000000563973 using weight 1.600000000084596. Seeking goal 0.8
-108. Prediction 0.800000000042298 using weight 1.6000000000634471. Seeking goal 0.8
-109. Prediction 0.8000000000317236 using weight 1.6000000000475854. Seeking goal 0.8
-110. Prediction 0.8000000000237927 using weight 1.600000000035689. Seeking goal 0.8
-111. Prediction 0.8000000000178445 using weight 1.600000000026767. Seeking goal 0.8
-112. Prediction 0.8000000000133834 using weight 1.6000000000200751. Seeking goal 0.8
-113. Prediction 0.8000000000100376 using weight 1.6000000000150565. Seeking goal 0.8
-114. Prediction 0.8000000000075282 using weight 1.6000000000112924. Seeking goal 0.8
-115. Prediction 0.8000000000056462 using weight 1.6000000000084693. Seeking goal 0.8
-116. Prediction 0.8000000000042347 using weight 1.600000000006352. Seeking goal 0.8
-117. Prediction 0.800000000003176 using weight 1.6000000000047638. Seeking goal 0.8
-118. Prediction 0.8000000000023819 using weight 1.6000000000035728. Seeking goal 0.8
-119. Prediction 0.8000000000017864 using weight 1.6000000000026797. Seeking goal 0.8
-120. Prediction 0.8000000000013399 using weight 1.6000000000020098. Seeking goal 0.8
-121. Prediction 0.8000000000010049 using weight 1.6000000000015073. Seeking goal 0.8
-122. Prediction 0.8000000000007537 using weight 1.6000000000011305. Seeking goal 0.8
-123. Prediction 0.8000000000005653 using weight 1.6000000000008479. Seeking goal 0.8
-124. Prediction 0.8000000000004239 using weight 1.600000000000636. Seeking goal 0.8
-125. Prediction 0.800000000000318 using weight 1.600000000000477. Seeking goal 0.8
-126. Prediction 0.8000000000002385 using weight 1.6000000000003578. Seeking goal 0.8
-Initial weight: 1977.6341172686684
-Learned weight: 1.6000000000003578
+1. Prediction 1010.0511078835278 using weight 1515.4766618252918. Seeking goal 0.8
+2. Prediction 757.7383309126459 using weight 1137.0074963689688. Seeking goal 0.8
+3. Prediction 568.5037481844844 using weight 853.1556222767265. Seeking goal 0.8
+4. Prediction 426.57781113836324 using weight 640.2667167075449. Seeking goal 0.8
+5. Prediction 320.13335835377245 using weight 480.6000375306587. Seeking goal 0.8
+6. Prediction 240.30001876532936 using weight 360.85002814799407. Seeking goal 0.8
+7. Prediction 180.42501407399703 using weight 271.03752111099556. Seeking goal 0.8
+8. Prediction 135.51876055549778 using weight 203.6781408332467. Seeking goal 0.8
+9. Prediction 101.83907041662334 using weight 153.158605624935. Seeking goal 0.8
+10. Prediction 76.5793028124675 using weight 115.26895421870125. Seeking goal 0.8
+11. Prediction 57.63447710935063 using weight 86.85171566402593. Seeking goal 0.8
+12. Prediction 43.425857832012966 using weight 65.53878674801945. Seeking goal 0.8
+13. Prediction 32.769393374009724 using weight 49.554090061014584. Seeking goal 0.8
+14. Prediction 24.777045030507292 using weight 37.56556754576094. Seeking goal 0.8
+15. Prediction 18.78278377288047 using weight 28.57417565932071. Seeking goal 0.8
+16. Prediction 14.287087829660354 using weight 21.830631744490532. Seeking goal 0.8
+17. Prediction 10.915315872245266 using weight 16.7729738083679. Seeking goal 0.8
+18. Prediction 8.38648690418395 using weight 12.979730356275926. Seeking goal 0.8
+19. Prediction 6.489865178137963 using weight 10.134797767206944. Seeking goal 0.8
+20. Prediction 5.067398883603472 using weight 8.001098325405207. Seeking goal 0.8
+21. Prediction 4.000549162702604 using weight 6.4008237440539055. Seeking goal 0.8
+22. Prediction 3.2004118720269528 using weight 5.200617808040429. Seeking goal 0.8
+23. Prediction 2.6003089040202143 using weight 4.300463356030321. Seeking goal 0.8
+24. Prediction 2.1502316780151607 using weight 3.625347517022741. Seeking goal 0.8
+25. Prediction 1.8126737585113706 using weight 3.119010637767056. Seeking goal 0.8
+26. Prediction 1.559505318883528 using weight 2.739257978325292. Seeking goal 0.8
+27. Prediction 1.369628989162646 using weight 2.4544434837439693. Seeking goal 0.8
+28. Prediction 1.2272217418719846 using weight 2.240832612807977. Seeking goal 0.8
+29. Prediction 1.1204163064039885 using weight 2.080624459605983. Seeking goal 0.8
+30. Prediction 1.0403122298029914 using weight 1.9604683447044873. Seeking goal 0.8
+31. Prediction 0.9802341723522436 using weight 1.8703512585283655. Seeking goal 0.8
+32. Prediction 0.9351756292641827 using weight 1.802763443896274. Seeking goal 0.8
+33. Prediction 0.901381721948137 using weight 1.7520725829222057. Seeking goal 0.8
+34. Prediction 0.8760362914611028 using weight 1.7140544371916544. Seeking goal 0.8
+35. Prediction 0.8570272185958272 using weight 1.6855408278937407. Seeking goal 0.8
+36. Prediction 0.8427704139468704 using weight 1.6641556209203054. Seeking goal 0.8
+37. Prediction 0.8320778104601527 using weight 1.6481167156902292. Seeking goal 0.8
+38. Prediction 0.8240583578451146 using weight 1.636087536767672. Seeking goal 0.8
+39. Prediction 0.818043768383836 using weight 1.6270656525757539. Seeking goal 0.8
+40. Prediction 0.8135328262878769 using weight 1.6202992394318154. Seeking goal 0.8
+41. Prediction 0.8101496197159077 using weight 1.6152244295738616. Seeking goal 0.8
+42. Prediction 0.8076122147869308 using weight 1.6114183221803962. Seeking goal 0.8
+43. Prediction 0.8057091610901981 using weight 1.6085637416352971. Seeking goal 0.8
+44. Prediction 0.8042818708176486 using weight 1.606422806226473. Seeking goal 0.8
+45. Prediction 0.8032114031132365 using weight 1.6048171046698547. Seeking goal 0.8
+46. Prediction 0.8024085523349274 using weight 1.6036128285023912. Seeking goal 0.8
+47. Prediction 0.8018064142511956 using weight 1.6027096213767935. Seeking goal 0.8
+48. Prediction 0.8013548106883968 using weight 1.6020322160325953. Seeking goal 0.8
+49. Prediction 0.8010161080162976 using weight 1.6015241620244465. Seeking goal 0.8
+50. Prediction 0.8007620810122232 using weight 1.601143121518335. Seeking goal 0.8
+51. Prediction 0.8005715607591675 using weight 1.6008573411387512. Seeking goal 0.8
+52. Prediction 0.8004286705693756 using weight 1.6006430058540635. Seeking goal 0.8
+53. Prediction 0.8003215029270317 using weight 1.6004822543905477. Seeking goal 0.8
+54. Prediction 0.8002411271952738 using weight 1.6003616907929108. Seeking goal 0.8
+55. Prediction 0.8001808453964554 using weight 1.6002712680946831. Seeking goal 0.8
+56. Prediction 0.8001356340473416 using weight 1.6002034510710124. Seeking goal 0.8
+57. Prediction 0.8001017255355062 using weight 1.6001525883032592. Seeking goal 0.8
+58. Prediction 0.8000762941516296 using weight 1.6001144412274444. Seeking goal 0.8
+59. Prediction 0.8000572206137222 using weight 1.6000858309205834. Seeking goal 0.8
+60. Prediction 0.8000429154602917 using weight 1.6000643731904376. Seeking goal 0.8
+61. Prediction 0.8000321865952188 using weight 1.6000482798928282. Seeking goal 0.8
+62. Prediction 0.8000241399464141 using weight 1.600036209919621. Seeking goal 0.8
+63. Prediction 0.8000181049598105 using weight 1.6000271574397158. Seeking goal 0.8
+64. Prediction 0.8000135787198579 using weight 1.6000203680797869. Seeking goal 0.8
+65. Prediction 0.8000101840398934 using weight 1.6000152760598403. Seeking goal 0.8
+66. Prediction 0.8000076380299201 using weight 1.6000114570448802. Seeking goal 0.8
+67. Prediction 0.8000057285224401 using weight 1.6000085927836603. Seeking goal 0.8
+68. Prediction 0.8000042963918301 using weight 1.6000064445877453. Seeking goal 0.8
+69. Prediction 0.8000032222938727 using weight 1.600004833440809. Seeking goal 0.8
+70. Prediction 0.8000024167204045 using weight 1.600003625080607. Seeking goal 0.8
+71. Prediction 0.8000018125403034 using weight 1.600002718810455. Seeking goal 0.8
+72. Prediction 0.8000013594052275 using weight 1.6000020391078413. Seeking goal 0.8
+73. Prediction 0.8000010195539207 using weight 1.6000015293308811. Seeking goal 0.8
+74. Prediction 0.8000007646654406 using weight 1.600001146998161. Seeking goal 0.8
+75. Prediction 0.8000005734990805 using weight 1.6000008602486209. Seeking goal 0.8
+76. Prediction 0.8000004301243104 using weight 1.6000006451864657. Seeking goal 0.8
+77. Prediction 0.8000003225932328 using weight 1.6000004838898492. Seeking goal 0.8
+78. Prediction 0.8000002419449246 using weight 1.600000362917387. Seeking goal 0.8
+79. Prediction 0.8000001814586934 using weight 1.6000002721880402. Seeking goal 0.8
+80. Prediction 0.8000001360940201 using weight 1.6000002041410302. Seeking goal 0.8
+81. Prediction 0.8000001020705151 using weight 1.6000001531057726. Seeking goal 0.8
+82. Prediction 0.8000000765528863 using weight 1.6000001148293295. Seeking goal 0.8
+83. Prediction 0.8000000574146647 using weight 1.6000000861219972. Seeking goal 0.8
+84. Prediction 0.8000000430609986 using weight 1.600000064591498. Seeking goal 0.8
+85. Prediction 0.800000032295749 using weight 1.6000000484436234. Seeking goal 0.8
+86. Prediction 0.8000000242218117 using weight 1.6000000363327176. Seeking goal 0.8
+87. Prediction 0.8000000181663588 using weight 1.6000000272495383. Seeking goal 0.8
+88. Prediction 0.8000000136247691 using weight 1.6000000204371538. Seeking goal 0.8
+89. Prediction 0.8000000102185769 using weight 1.6000000153278653. Seeking goal 0.8
+90. Prediction 0.8000000076639326 using weight 1.600000011495899. Seeking goal 0.8
+91. Prediction 0.8000000057479495 using weight 1.6000000086219242. Seeking goal 0.8
+92. Prediction 0.8000000043109621 using weight 1.600000006466443. Seeking goal 0.8
+93. Prediction 0.8000000032332215 using weight 1.6000000048498322. Seeking goal 0.8
+94. Prediction 0.8000000024249161 using weight 1.600000003637374. Seeking goal 0.8
+95. Prediction 0.800000001818687 using weight 1.6000000027280306. Seeking goal 0.8
+96. Prediction 0.8000000013640153 using weight 1.600000002046023. Seeking goal 0.8
+97. Prediction 0.8000000010230115 using weight 1.6000000015345173. Seeking goal 0.8
+98. Prediction 0.8000000007672586 using weight 1.600000001150888. Seeking goal 0.8
+99. Prediction 0.800000000575444 using weight 1.600000000863166. Seeking goal 0.8
+100. Prediction 0.800000000431583 using weight 1.6000000006473747. Seeking goal 0.8
+101. Prediction 0.8000000003236873 using weight 1.600000000485531. Seeking goal 0.8
+102. Prediction 0.8000000002427655 using weight 1.6000000003641484. Seeking goal 0.8
+103. Prediction 0.8000000001820742 using weight 1.6000000002731114. Seeking goal 0.8
+104. Prediction 0.8000000001365557 using weight 1.6000000002048336. Seeking goal 0.8
+105. Prediction 0.8000000001024168 using weight 1.6000000001536252. Seeking goal 0.8
+106. Prediction 0.8000000000768126 using weight 1.600000000115219. Seeking goal 0.8
+107. Prediction 0.8000000000576095 using weight 1.6000000000864143. Seeking goal 0.8
+108. Prediction 0.8000000000432071 using weight 1.6000000000648107. Seeking goal 0.8
+109. Prediction 0.8000000000324053 using weight 1.600000000048608. Seeking goal 0.8
+110. Prediction 0.800000000024304 using weight 1.600000000036456. Seeking goal 0.8
+111. Prediction 0.800000000018228 using weight 1.600000000027342. Seeking goal 0.8
+112. Prediction 0.800000000013671 using weight 1.6000000000205066. Seeking goal 0.8
+113. Prediction 0.8000000000102533 using weight 1.60000000001538. Seeking goal 0.8
+114. Prediction 0.80000000000769 using weight 1.600000000011535. Seeking goal 0.8
+115. Prediction 0.8000000000057675 using weight 1.6000000000086514. Seeking goal 0.8
+116. Prediction 0.8000000000043257 using weight 1.6000000000064887. Seeking goal 0.8
+117. Prediction 0.8000000000032443 using weight 1.6000000000048664. Seeking goal 0.8
+118. Prediction 0.8000000000024332 using weight 1.6000000000036498. Seeking goal 0.8
+119. Prediction 0.8000000000018249 using weight 1.6000000000027375. Seeking goal 0.8
+120. Prediction 0.8000000000013687 using weight 1.6000000000020531. Seeking goal 0.8
+121. Prediction 0.8000000000010266 using weight 1.6000000000015397. Seeking goal 0.8
+122. Prediction 0.8000000000007699 using weight 1.6000000000011547. Seeking goal 0.8
+123. Prediction 0.8000000000005774 using weight 1.600000000000866. Seeking goal 0.8
+124. Prediction 0.800000000000433 using weight 1.6000000000006496. Seeking goal 0.8
+125. Prediction 0.8000000000003248 using weight 1.6000000000004873. Seeking goal 0.8
+126. Prediction 0.8000000000002436 using weight 1.6000000000003656. Seeking goal 0.8
+Initial weight: 2020.1022157670557
+Learned weight: 1.6000000000003656
 
 Use it: request outputs as function of fuzzy neural inputs
-1. Prediction 0.7680000000001718 from input 0.48
-2. Prediction 0.7760000000001736 from input 0.485
-3. Prediction 0.7840000000001753 from input 0.49
-4. Prediction 0.7920000000001771 from input 0.495
-5. Prediction 0.8000000000001789 from input 0.5
-6. Prediction 0.8800000000001968 from input 0.55
-7. Prediction 0.8160000000001825 from input 0.51
-8. Prediction 0.8240000000001843 from input 0.515
+1. Prediction 1.440000000000329 from input 0.9
+2. Prediction 3.5200000000008047 from input 2.2
+3. Prediction -16.000000000003656 from input -10.0
+4. Prediction 0.7680000000001754 from input 0.48
+5. Prediction 0.7760000000001773 from input 0.485
+6. Prediction 0.7840000000001791 from input 0.49
+7. Prediction 0.792000000000181 from input 0.495
+8. Prediction 0.8000000000001828 from input 0.5
+9. Prediction 0.8800000000002012 from input 0.55
+10. Prediction 0.8160000000001865 from input 0.51
+11. Prediction 0.8240000000001882 from input 0.515
 ```

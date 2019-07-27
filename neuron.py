@@ -45,7 +45,7 @@ print("Learned weight: " + str(weight))
 
 print ("\nUse it: request outputs as function of fuzzy neural inputs")
 counter = 0
-vals = (0.480, 0.485, 0.490, 0.495, 0.500, 0.550, 0.510, 0.515)
+vals = (0.9, 2.2, -10.0, 0.480, 0.485, 0.490, 0.495, 0.500, 0.550, 0.510, 0.515)
 for x in range(0, len(vals)):
     counter += 1
     input = vals[x]
